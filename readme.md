@@ -8,8 +8,6 @@ This eCommerce application follows a modular architecture, consisting of the fol
 - [User Service](https://github.com/ahmadrashidh/user-service): Handles user authentication, registration, and profile management.
 - [Product Service](https://github.com/ahmadrashidh/product-service): Manages product catalog, including listing, searching, and details.
 
-We encourage you to explore these repositories to understand their individual functionalities and how they integrate with the eCommerce application ecosystem.
-
 ## Service Discovery Module
 
 ### Overview
@@ -51,7 +49,7 @@ Ensure you have the following installed:
 The Eureka dashboard will be available at: `http://localhost:8761`
 
 ### Configuration
-#### Configuration
+
 To configure Eureka Server, include the following properties in `application.properties`:
 ```properties
 server.port=8761
@@ -62,9 +60,8 @@ eureka.server.enable-self-preservation=true
 ### Future Scope
 The following enhancements is considered and are being implemented:
 
-#### 1. API Gateway & Security
+#### 1. API Gateway & Load Balancing
 - Introduce **Spring Cloud Gateway** or **Zuul** for centralized API management.
-- Implement **JWT-based authentication** for securing microservices.
 
 #### 2. Asynchronous Communication
 - To Implement **Kafka** or **RabbitMQ** for event-driven communication between microservices.
