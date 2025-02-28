@@ -7,6 +7,8 @@ This eCommerce application follows a modular architecture, consisting of the fol
 
 - [User Service](https://github.com/ahmadrashidh/user-service): Handles user authentication, registration, and profile management.
 - [Product Service](https://github.com/ahmadrashidh/product-service): Manages product catalog, including listing, searching, and details.
+- [Payment Service](https://github.com/ahmadrashidh/payment-service): Handles payments using Stripe API
+- [API Gateway](https://github.com/ahmadrashidh/ecom-apigateway.git): Manages all external API requests and provides load balancing, routing.
 
 ## Service Discovery Module
 
@@ -60,14 +62,11 @@ eureka.server.enable-self-preservation=true
 ### Future Scope
 The following enhancements is considered and are being implemented:
 
-#### 1. API Gateway & Load Balancing
-- Introduce **Spring Cloud Gateway** or **Zuul** for centralized API management.
-
-#### 2. Asynchronous Communication
+#### 1. Asynchronous Communication
 - To Implement **Kafka** or **RabbitMQ** for event-driven communication between microservices.
 - Reduce dependency on synchronous REST calls to improve scalability and resilience.
 
-#### 3. Kubernetes & Containerization
+#### 2. Kubernetes & Containerization
 - Deploy microservices using **Docker** and orchestrate them with **Kubernetes**.
 
 
